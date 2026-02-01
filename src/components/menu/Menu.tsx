@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {Icon} from "../icon/Icon.tsx";
 
 export const Menu = () => {
     return (
@@ -19,17 +18,6 @@ export const Menu = () => {
                 </li>
                 <li>
                     <a href="">Contact</a>
-                </li>
-                <li>
-                    <a href="">
-                        <Icon iconId="github"/>
-                    </a>
-                    <a href="">
-                        <Icon iconId="twitter"/>
-                    </a>
-                    <a href="">
-                        <Icon iconId="linkedin"/>
-                    </a>
                 </li>
             </ul>
         </StyledMenu>
