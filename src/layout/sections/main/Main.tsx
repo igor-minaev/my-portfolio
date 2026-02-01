@@ -1,21 +1,24 @@
 import photo from "../../../assets/images/photo.jpg"
 import styled from "styled-components";
+import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 
 export const Main = () => {
     return (
         <StyledMain>
-            <div>
-                <p>Hi 👋,</p>
-                <p>My name is</p>
-                <Name>Pavan MG</Name>
-                <MainTitle> I build things for web</MainTitle>
-            </div>
-            <Photo src={photo} alt=""/>
+            <FlexWrapper justify="space-around" alignItem="center">
+                <div>
+                    <p>Hi 👋,</p>
+                    <p>My name is</p>
+                    <Name>Ihar Minayeu</Name>
+                    <MainTitle> I build things for web</MainTitle>
+                </div>
+                <Photo src={photo} alt=""/>
+            </FlexWrapper>
         </StyledMain>
     );
 };
 
-const StyledMain = styled.div`
+const StyledMain = styled.section`
     background-color: rgb(253, 170, 133);
     min-height: 100vh;
 `
