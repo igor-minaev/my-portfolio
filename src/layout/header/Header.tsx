@@ -1,12 +1,10 @@
 import styled from "styled-components";
+import {Logo} from "../../components/logo/Logo.tsx";
 
 export const Header = () => {
     return (
         <StyledHeader>
-            <a href="">
-                <img src=""
-                     alt=""/>
-            </a>
+            <Logo/>
             <nav>
                 <ul>
                     <li>
