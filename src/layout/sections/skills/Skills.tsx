@@ -2,7 +2,6 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {SectionTitle} from "../../../components/SectionTitle.tsx";
 import {SectionDescription} from "../../../components/SectionDescription.tsx";
-// import {Icon} from "../../../components/icon/Icon.tsx";
 import {Skill} from "./skill/Skill.tsx";
 
 export const Skills = () => {
@@ -22,19 +21,7 @@ export const Skills = () => {
                 <Skill iconId="git" viewBox="0 0 120 120"/>
                 <Skill iconId="greensock" viewBox="0 0 120 120"/>
                 <Skill iconId="vscode" viewBox="0 0 120 120"/>
-                <Skill iconId="github" viewBox="0 0 120 120"/>
-                {/*<Icon iconId="html"/>*/}
-                {/*<Icon iconId="css"/>*/}
-                {/*<Icon iconId="js"/>*/}
-                {/*<Icon iconId="react"/>*/}
-                {/*<Icon iconId="redux"/>*/}
-                {/*<Icon iconId="bootstrap"/>*/}
-                {/*<Icon iconId="tailwind"/>*/}
-                {/*<Icon iconId="sass"/>*/}
-                {/*<Icon iconId="git"/>*/}
-                {/*<Icon iconId="greensock"/>*/}
-                {/*<Icon iconId="vscode"/>*/}
-                {/*<Icon iconId="github"/>*/}
+                <Skill iconId="github2" viewBox="0 0 120 120"/>
             </FlexWrapper>
         </StyledSkills>
     );
