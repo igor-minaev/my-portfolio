@@ -1,34 +1,12 @@
 import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo.tsx";
+import {Menu} from "../../components/menu/Menu.tsx";
 
 export const Header = () => {
     return (
         <StyledHeader>
             <Logo/>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="">Home</a>
-                    </li>
-                    <li>
-                        <a href="">About</a>
-                    </li>
-                    <li>
-                        <a href="">Tech Stack</a>
-                    </li>
-                    <li>
-                        <a href="">Projects</a>
-                    </li>
-                    <li>
-                        <a href="">Contact</a>
-                    </li>
-                    <li>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                    </li>
-                </ul>
-            </nav>
+            <Menu/>
         </StyledHeader>
     );
 };
