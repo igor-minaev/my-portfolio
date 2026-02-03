@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 type SkillPropsType = {
     iconId: string
-    viewBox: string
+    viewBox?: string
 }
 
 export const Skill = (props: SkillPropsType) => {

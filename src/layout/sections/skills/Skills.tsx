@@ -21,7 +21,7 @@ export const Skills = () => {
                 <Skill iconId="git" viewBox="0 0 120 120"/>
                 <Skill iconId="greensock" viewBox="0 0 120 120"/>
                 <Skill iconId="vscode" viewBox="0 0 120 120"/>
-                <Skill iconId="github2" viewBox="0 0 120 120"/>
+                <Skill iconId="github2"  viewBox="0 0 120 120"/>
             </FlexWrapper>
         </StyledSkills>
     );
