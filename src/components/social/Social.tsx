@@ -26,6 +26,7 @@ export const Social = () => {
 
 const StyledSocial = styled.ul`
     display: flex;
+    list-style-type: none;
 
 `
 
