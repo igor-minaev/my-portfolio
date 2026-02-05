@@ -1,6 +1,7 @@
 import photo from "../../../assets/images/photo.jpg"
 import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
+import {theme} from "../../../styles/Theme.ts";
 
 export const Main = () => {
     return (
@@ -34,6 +35,9 @@ const MainTitle = styled.h1`
 `
 
 const Name = styled.h2`
+    background: ${theme.gradients.primaryFont};
+    background-clip: text;
+    color: transparent;
 
 `
 
