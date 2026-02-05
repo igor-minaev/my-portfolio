@@ -7,10 +7,10 @@ import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 export const Footer = () => {
     return (
         <StyledFooter>
-            <FlexWrapper  justify="space-between" alignItem="center">
+            <FlexWrapper justify="space-between" alignItem="center">
                 <Logo/>
-                <PhoneNumber> +3445762358252</PhoneNumber>
-                <Email>someemail@gmail.com</Email>
+                <PhoneNumber href="tel:+3445762358252"> +3445762358252</PhoneNumber>
+                <Email href="mailto:someemail@gmail.com">someemail@gmail.com</Email>
                 <Social/>
             </FlexWrapper>
         </StyledFooter>
@@ -22,10 +22,10 @@ const StyledFooter = styled.footer`
     min-height: 20vh;
 `
 
-const PhoneNumber = styled.span`
-   
+const PhoneNumber = styled.a`
+
 `
-const Email = styled.span`
-   
+const Email = styled.a`
+
 `
 
