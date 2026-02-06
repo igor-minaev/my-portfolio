@@ -3,15 +3,18 @@ import {Logo} from "../../components/logo/Logo.tsx";
 import {Menu} from "../../components/menu/Menu.tsx";
 import {Social} from "../../components/social/Social.tsx";
 import {FlexWrapper} from "../../components/FlexWrapper.tsx";
+import {Container} from "../../components/Container.tsx";
 
 export const Header = () => {
     return (
         <StyledHeader>
-            <FlexWrapper justify="space-between">
-                <Logo/>
-                <Menu/>
-                <Social/>
-            </FlexWrapper>
+            <Container>
+                <FlexWrapper justify="space-between" alignItem="center">
+                    <Logo/>
+                    <Menu/>
+                    <Social/>
+                </FlexWrapper>
+            </Container>
         </StyledHeader>
     );
 };

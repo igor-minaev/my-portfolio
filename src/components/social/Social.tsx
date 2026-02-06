@@ -7,17 +7,17 @@ export const Social = () => {
         <StyledSocial>
             <li>
                 <a href="">
-                    <Icon iconId="github"/>
+                    <Icon iconId="github" width="30" height="30" viewBox="0 0 30 30"/>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <Icon iconId="twitter"/>
+                    <Icon iconId="twitter" width="30" height="30" viewBox="0 0 30 30"/>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <Icon iconId="linkedin"/>
+                    <Icon iconId="linkedin" width="30" height="30" viewBox="0 0 30 30"/>
                 </a>
             </li>
         </StyledSocial>
@@ -26,6 +26,7 @@ export const Social = () => {
 
 const StyledSocial = styled.ul`
     display: flex;
+    gap: 10px;
     list-style-type: none;
 
 `
