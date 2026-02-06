@@ -19,9 +19,8 @@ export const Contacts = () => {
     );
 };
 
-const StyledContacts = styled.div`
+const StyledContacts = styled.section`
     min-height: 50vh;
-    background-color: #d5ff6c;
 `
 
 const StyledForm = styled.form`

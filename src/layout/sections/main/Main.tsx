@@ -20,7 +20,6 @@ export const Main = () => {
 };
 
 const StyledMain = styled.section`
-    background-color: rgb(253, 170, 133);
     min-height: 100vh;
 `
 const Photo = styled.img`
@@ -35,9 +34,9 @@ const MainTitle = styled.h1`
 `
 
 const Name = styled.h2`
-    background: ${theme.gradients.primaryFont};
-    background-clip: text;
-    color: transparent;
+     background: ${theme.gradients.primaryFont};
+     background-clip: text;
+     color: transparent;
 
 `
 

@@ -1,6 +1,7 @@
 import {createGlobalStyle} from "styled-components";
+import {theme} from "./Theme.ts";
 
-export const GlobalStyle=createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
     *,
     *::before,
     *::after {
@@ -17,15 +18,21 @@ export const GlobalStyle=createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
-    
-    a{
+
+    a {
         text-decoration: none;
     }
-    ul{
+
+    ul {
         list-style-type: none;
     }
-    button{
+
+    button {
         background-color: unset;
         border: none;
+    }
+
+    section {
+        background-color: ${theme.colors.background};
     }
 `
