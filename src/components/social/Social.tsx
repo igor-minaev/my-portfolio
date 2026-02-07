@@ -1,10 +1,10 @@
 import {Icon} from "../icon/Icon.tsx";
 import styled from "styled-components";
 import type {SocialItem} from "../../layout/header/Header.tsx";
+import {theme} from "../../styles/Theme.ts";
 
 
 export const Social = (props: { socialItems: Array<SocialItem> }) => {
-    debugger
     return (
         <StyledSocial>
             {props.socialItems.map((item) => (
@@ -20,8 +20,9 @@ export const Social = (props: { socialItems: Array<SocialItem> }) => {
 
 const StyledSocial = styled.ul`
     display: flex;
-    gap: 10px;
+    gap: 20px;
     list-style-type: none;
+    padding-left: 40px;
 
 `
 const ListItem = styled.li`
@@ -30,6 +31,12 @@ const ListItem = styled.li`
 const Link = styled.a`
     display: flex;
     align-items: center;
+    color: ${theme.colors.secondaryFont};
+
+    &:hover {
+        color: ${theme.colors.tertiaryFont};
+        transform: translateY(-4px) ;
+    }
 `
 
 

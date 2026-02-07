@@ -8,7 +8,6 @@ type IconPropsType = {
 }
 
 export const Icon = (props: IconPropsType) => {
-    debugger
     return (
         <svg width={props.width || "97"}
              height={props.height || "59"}
