@@ -27,8 +27,10 @@ export const Header = () => {
             <Container>
                 <FlexWrapper justify="space-between" alignItem="center">
                     <Logo/>
-                    <Menu menuItems={menuTitles}/>
-                    <Social socialItems={socialIcons}/>
+                    <FlexWrapper>
+                        <Menu menuItems={menuTitles}/>
+                        <Social socialItems={socialIcons}/>
+                    </FlexWrapper>
                 </FlexWrapper>
             </Container>
         </StyledHeader>
@@ -38,5 +40,10 @@ export const Header = () => {
 const StyledHeader = styled.header`
     background: ${theme.colors.background};
     padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99999;
 `
 
