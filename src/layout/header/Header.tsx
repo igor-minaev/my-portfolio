@@ -5,13 +5,15 @@ import {Social} from "../../components/social/Social.tsx";
 import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 import {Container} from "../../components/Container.tsx";
 
+const menuItems = ["Home", "About", "Tech Stack", "Tech Stack", "Projects", "Contact"]
+
 export const Header = () => {
     return (
         <StyledHeader>
             <Container>
                 <FlexWrapper justify="space-between" alignItem="center">
                     <Logo/>
-                    <Menu/>
+                    <Menu menuItems={menuItems}/>
                     <Social/>
                 </FlexWrapper>
             </Container>
