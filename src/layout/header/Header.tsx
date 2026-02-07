@@ -4,6 +4,7 @@ import {Menu} from "../../components/menu/Menu.tsx";
 import {Social} from "../../components/social/Social.tsx";
 import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 import {Container} from "../../components/Container.tsx";
+import {theme} from "../../styles/Theme.ts";
 
 const menuItems = ["Home", "About", "Tech Stack", "Tech Stack", "Projects", "Contact"]
 
@@ -22,6 +23,7 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-    background-color: rgb(255, 253, 129);
+    background: ${theme.colors.background};
+    padding: 20px;
 `
 

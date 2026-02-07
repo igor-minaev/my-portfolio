@@ -5,21 +5,21 @@ import styled from "styled-components";
 export const Social = () => {
     return (
         <StyledSocial>
-            <li>
-                <a href="">
+            <ListItem>
+                <Link href="#">
                     <Icon iconId="github" width="30" height="30" viewBox="0 0 30 30"/>
-                </a>
-            </li>
-            <li>
-                <a href="">
+                </Link>
+            </ListItem>
+            <ListItem>
+                <Link href="#">
                     <Icon iconId="twitter" width="30" height="30" viewBox="0 0 30 30"/>
-                </a>
-            </li>
-            <li>
-                <a href="">
+                </Link>
+            </ListItem>
+            <ListItem>
+                <Link href="#">
                     <Icon iconId="linkedin" width="30" height="30" viewBox="0 0 30 30"/>
-                </a>
-            </li>
+                </Link>
+            </ListItem>
         </StyledSocial>
     );
 };
@@ -28,6 +28,15 @@ const StyledSocial = styled.ul`
     display: flex;
     gap: 10px;
     list-style-type: none;
+
+`
+const ListItem = styled.li`
+
+
+`
+const Link = styled.a`
+    display: flex;
+    align-items: center;
 
 `
 

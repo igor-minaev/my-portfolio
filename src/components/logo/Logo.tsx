@@ -1,10 +1,16 @@
 import {Icon} from "../icon/Icon.tsx";
+import styled from "styled-components";
 
 export const Logo = () => {
     return (
-        <a href="">
+        <Link href="">
             <Icon iconId="logoColor"/>
-        </a>
+        </Link>
     );
 };
+
+const Link = styled.a`
+    display: flex;
+    align-items: center;
+`
 
