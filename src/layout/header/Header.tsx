@@ -6,7 +6,20 @@ import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 import {Container} from "../../components/Container.tsx";
 import {theme} from "../../styles/Theme.ts";
 
-const menuItems = ["Home", "About", "Tech Stack", "Tech Stack", "Projects", "Contact"]
+export type SocialItem = {
+    id: string
+    iconId: string
+    width: string
+    height: string
+    viewBox: string
+}
+
+const menuTitles: Array<string> = ["Home", "About", "Tech Stack", "Tech Stack", "Projects", "Contact"]
+const socialIcons: Array<SocialItem> = [
+    {id: crypto.randomUUID(), iconId: "github", width: "30", height: "30", viewBox: "0 0 30 30"},
+    {id: crypto.randomUUID(), iconId: "twitter", width: "30", height: "30", viewBox: "0 0 30 30"},
+    {id: crypto.randomUUID(), iconId: "linkedin", width: "30", height: "30", viewBox: "0 0 30 30"}
+]
 
 export const Header = () => {
     return (
@@ -14,8 +27,8 @@ export const Header = () => {
             <Container>
                 <FlexWrapper justify="space-between" alignItem="center">
                     <Logo/>
-                    <Menu menuItems={menuItems}/>
-                    <Social/>
+                    <Menu menuItems={menuTitles}/>
+                    <Social socialItems={socialIcons}/>
                 </FlexWrapper>
             </Container>
         </StyledHeader>

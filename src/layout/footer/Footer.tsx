@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo.tsx";
-import {Social} from "../../components/social/Social.tsx";
+// import {Social} from "../../components/social/Social.tsx";
 import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 
 
@@ -11,7 +11,7 @@ export const Footer = () => {
                 <Logo/>
                 <PhoneNumber href="tel:+3445762358252"> +3445762358252</PhoneNumber>
                 <Email href="mailto:someemail@gmail.com">someemail@gmail.com</Email>
-                <Social/>
+                {/*<Social/>*/}
             </FlexWrapper>
         </StyledFooter>
     );
