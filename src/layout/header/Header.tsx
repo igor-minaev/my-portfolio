@@ -26,6 +26,7 @@ export const Header = () => {
         <StyledHeader>
             <Container>
                 <FlexWrapper justify="space-between" alignItem="center">
+                    <HeaderTitle>Frontend developer</HeaderTitle>
                     <Logo/>
                     <FlexWrapper>
                         <Menu menuItems={menuTitles}/>
@@ -45,5 +46,9 @@ const StyledHeader = styled.header`
     top: 0;
     right: 0;
     z-index: 99999;
+`
+
+const HeaderTitle = styled.h1`
+    display: none;
 `
 

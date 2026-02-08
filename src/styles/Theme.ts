@@ -7,6 +7,7 @@ export const theme = {
         linkFont: "#FFFFFF",
     },
     gradients: {
-        primaryFont: 'linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%)'
+        primaryFont: 'linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%)',
+        primaryBorder: 'linear-gradient(0deg, #13b0f5 2.6%, #e70faa 100%)',
     }
 }
