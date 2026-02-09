@@ -30,12 +30,12 @@ const StyledMain = styled.section`
     display: flex;
 `
 
-const PhotoContainer=styled.div`
+const PhotoContainer = styled.div`
     position: relative;
-    
+
     &::before {
         content: "";
-        display:inline-block;
+        display: inline-block;
         width: 636px;
         height: 636px;
         background-image: url(${abstract});
@@ -53,36 +53,37 @@ const Photo = styled.img`
     border-radius: 50%;
     object-fit: cover;
     border: 9px solid transparent;
-     background: linear-gradient(#eee, #eee 0) padding-box,
-     ${theme.gradients.primaryBorder} border-box;
+    background: linear-gradient(#eee, #eee 0) padding-box,
+    ${theme.gradients.primaryBorder} border-box;
+`
+
+const TextContainer = styled.div`
+    color: ${theme.colors.tertiaryFont};
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-size: 58px;
 `
 
 const Text = styled.span`
-    font-weight: 700;
-    font-size: 58px;
-    letter-spacing: -0.02em;
-    color: #d9d9d9;
+
 `
 
 const MainTitle = styled.h3`
+    letter-spacing: -0.02em;
     font-weight: 700;
     font-size: 58px;
-    letter-spacing: -0.02em;
-    color: #d9d9d9;
 `
 
 const Name = styled.h2`
     background: ${theme.gradients.primaryFont};
     background-clip: text;
     color: transparent;
+    letter-spacing: -0.02em;
     font-weight: 700;
     font-size: 58px;
-    letter-spacing: -0.02em;
-
 `
 
-const TextContainer = styled.div`
-`
+
 
 
 

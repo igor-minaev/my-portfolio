@@ -4,7 +4,6 @@ import {Menu} from "../../components/menu/Menu.tsx";
 import {Social} from "../../components/social/Social.tsx";
 import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 import {Container} from "../../components/Container.tsx";
-import {theme} from "../../styles/Theme.ts";
 
 export type SocialItem = {
     id: string
@@ -39,7 +38,7 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-    background: ${theme.colors.background};
+    background: rgba(25, 25, 25, 0.9);
     padding: 20px;
     position: fixed;
     left: 0;
