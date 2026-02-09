@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle.tsx";
-import {SectionDescription} from "../../../components/SectionDescription.tsx";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {Project} from "./project/Project.tsx";
 import project1 from "../../../assets/images/proj-1.png"
@@ -13,8 +12,7 @@ import project6 from "../../../assets/images/proj-6.png"
 export const Projects = () => {
     return (
         <StyledProjects>
-            <SectionTitle>Projects</SectionTitle>
-            <SectionDescription>Things I’ve built so far</SectionDescription>
+            <SectionTitle title="Projects" description="Things I’ve built so far"/>
             <FlexWrapper justify="space-around" wrap="wrap">
                 <Project
                     src={project1}

@@ -1,14 +1,12 @@
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle.tsx";
-import {SectionDescription} from "../../../components/SectionDescription.tsx";
 import {Button} from "../../../components/Button.tsx";
 
 
 export const Contacts = () => {
     return (
         <StyledContacts>
-            <SectionTitle>Contacts</SectionTitle>
-            <SectionDescription>For any questions please mail me:</SectionDescription>
+            <SectionTitle title="Contacts" description="For any questions please mail me:"/>
             <StyledForm>
                 <Field placeholder="name"></Field>
                 <Field placeholder="subject"></Field>
