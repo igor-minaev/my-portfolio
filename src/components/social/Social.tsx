@@ -32,6 +32,9 @@ const Link = styled.a`
     display: flex;
     align-items: center;
     color: ${theme.colors.secondaryFont};
+    svg {
+        
+    }
 
     &:hover {
         color: ${theme.colors.tertiaryFont};

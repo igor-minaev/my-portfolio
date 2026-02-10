@@ -1,6 +1,7 @@
 export const theme = {
     colors: {
         background: "#191919",
+        cardBackground: "#363636",
         primaryFont: "#CCCCCC",
         secondaryFont: "#A7A7A7",
         tertiaryFont: "#D9D9D9",

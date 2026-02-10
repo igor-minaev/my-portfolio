@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {theme} from "../../../styles/Theme.ts";
 import {Container} from "../../../components/Container.tsx";
-import abstract from "../../../assets/images/Abstract.png"
+import figure from "../../../assets/images/Abstract.png"
 
 export const Main = () => {
     return (
@@ -29,18 +29,17 @@ const StyledMain = styled.section`
     min-height: 100vh;
     display: flex;
 `
-
 const PhotoContainer = styled.div`
     position: relative;
 
     &::before {
         content: "";
         display: inline-block;
-        width: 636px;
-        height: 636px;
-        background-image: url(${abstract});
+        width: 628px;
+        height: 628px;
+        background-image: url(${figure});
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: auto;
         background-position: center;
         position: absolute;
         bottom: -140px;
