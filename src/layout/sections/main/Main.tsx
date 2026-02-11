@@ -9,7 +9,7 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper justify="space-between" alignItem="center">
+                <FlexWrapper justify="space-between" alignItem="center" wrap="wrap">
                     <TextContainer>
                         <Text>Hi 👋,</Text> <br/>
                         <Text>My name is</Text>
@@ -28,6 +28,7 @@ export const Main = () => {
 const StyledMain = styled.section`
     min-height: 100vh;
     display: flex;
+    overflow-x: clip;
 `
 const PhotoContainer = styled.div`
     position: relative;
@@ -37,7 +38,7 @@ const PhotoContainer = styled.div`
         display: inline-block;
         width: 628px;
         height: 628px;
-        background-image: url(${figure});
+        background-image: url('${figure}');
         background-repeat: no-repeat;
         background-size: auto;
         background-position: center;

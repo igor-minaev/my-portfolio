@@ -19,7 +19,7 @@ export const SectionTitle = (props: SectionTitle) => {
 const StyledSectioTitle = styled.div`
     text-align: center;
 `
-const Title = styled.h3`
+const Title = styled.h2`
     font-weight: 700;
     font-size: 48px;
     color: ${theme.colors.primaryFont};

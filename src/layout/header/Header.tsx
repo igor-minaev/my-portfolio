@@ -24,7 +24,7 @@ export const Header = () => {
     return (
         <StyledHeader>
             <Container>
-                <FlexWrapper justify="space-between" alignItem="center">
+                <FlexWrapper justify="space-between" alignItem="center" wrap="wrap">
                     <HeaderTitle>Frontend developer</HeaderTitle>
                     <Logo/>
                     <FlexWrapper>
@@ -39,7 +39,7 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
     background: rgba(25, 25, 25, 0.9);
-    padding: 20px;
+    padding: 20px 0;
     position: fixed;
     left: 0;
     top: 0;

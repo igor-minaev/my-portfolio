@@ -47,7 +47,6 @@ const StyledSkills = styled.section`
 const GridWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
     row-gap: 70px;

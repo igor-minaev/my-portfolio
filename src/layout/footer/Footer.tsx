@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo.tsx";
-// import {Social} from "../../components/social/Social.tsx";
+ // import {Social} from "../../components/social/Social.tsx";
 import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 
 
