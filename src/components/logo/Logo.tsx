@@ -1,10 +1,11 @@
 import {Icon} from "../icon/Icon.tsx";
 import styled from "styled-components";
 
-export const Logo = () => {
+
+export const Logo = (props: { iconId: string }) => {
     return (
         <Link href="">
-            <Icon iconId="logoColor"/>
+            <Icon iconId={props.iconId}/>
         </Link>
     );
 };
