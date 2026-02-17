@@ -15,7 +15,7 @@ export const Projects = () => {
         <StyledProjects>
             <Container>
                 <SectionTitle title="Projects" description="Things I’ve built so far"/>
-                <FlexWrapper justify="space-between" wrap="wrap" gap="65px 10px">
+                <FlexWrapper justify="space-around" wrap="wrap" gap="65px 15px">
                     <Project
                         src={project1}
                         title="Project Tile goes here"
