@@ -71,7 +71,7 @@ const Photo = styled.img`
 
 const TextContainer = styled.div`
     letter-spacing: -0.02em;
-    ${font({weight: 700, color: theme.colors.tertiaryFont, Fmax: 58, Fmin: 36})}
+    ${font({weight: 700, color: theme.colors.tertiaryFont, Fmax: 58, Fmin: 40})}
 `
 
 const Text = styled.span`
@@ -80,11 +80,11 @@ const Text = styled.span`
 
 const MainTitle = styled.h3`
     letter-spacing: -0.02em;
-    ${font({weight: 700, Fmax: 58, Fmin: 36})}
+    ${font({weight: 700, Fmax: 58, Fmin: 40})}
 `
 
 const Name = styled.h2`
-    ${font({weight: 700, Fmax: 58, Fmin: 36})}
+    ${font({weight: 700, Fmax: 58, Fmin: 40})}
     background: ${theme.gradients.primaryFont};
     background-clip: text;
     color: transparent;
