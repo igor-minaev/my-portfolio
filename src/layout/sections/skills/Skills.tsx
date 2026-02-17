@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle.tsx";
 import {Container} from "../../../components/Container.tsx";
 import {Icon} from "../../../components/icon/Icon.tsx";
+import {theme} from "../../../styles/Theme.ts";
 
 // const skills = [
 //     {id: crypto.randomUUID(), iconId: "html", viewBox: "0 0 120 120"},
@@ -50,4 +51,14 @@ const GridWrapper = styled.div`
     justify-items: center;
     align-items: center;
     row-gap: 70px;
+    @media ${theme.media.miniLaptop} {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media ${theme.media.mobile} {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media ${theme.media.mobileMini} {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 `

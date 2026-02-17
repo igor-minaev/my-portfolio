@@ -10,14 +10,14 @@ type SectionTitle = {
 
 export const SectionTitle = (props: SectionTitle) => {
     return (
-        <StyledSectioTitle>
+        <StyledSectionTitle>
             <Title>{props.title}</Title>
             <Description>{props.description}</Description>
-        </StyledSectioTitle>
+        </StyledSectionTitle>
     );
 };
 
-const StyledSectioTitle = styled.div`
+const StyledSectionTitle = styled.div`
     text-align: center;
 `
 const Title = styled.h2`
