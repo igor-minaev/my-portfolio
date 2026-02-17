@@ -4,12 +4,13 @@ import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {theme} from "../../../styles/Theme.ts";
 import {Container} from "../../../components/Container.tsx";
 import figure from "../../../assets/images/Abstract.png"
+import {font} from "../../../styles/Common.ts";
 
 export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper justify="space-between" alignItem="center" wrap="wrap">
+                <FlexWrapper justify="space-around" alignItem="center" wrap="wrap">
                     <TextContainer>
                         <Text>Hi 👋,</Text> <br/>
                         <Text>My name is</Text>
@@ -32,6 +33,7 @@ const StyledMain = styled.section`
 `
 const PhotoContainer = styled.div`
     position: relative;
+    margin-top: 30px;
 
     &::before {
         content: "";
@@ -40,11 +42,17 @@ const PhotoContainer = styled.div`
         height: 628px;
         background-image: url('${figure}');
         background-repeat: no-repeat;
-        background-size: auto;
+        background-size: cover;
         background-position: center;
         position: absolute;
         bottom: -140px;
         left: -119px;
+        @media ${theme.media.mobile}{
+            width: 500px;
+            height: 500px;
+            bottom: -95px;
+            left: -90px;
+        }
     }
 `
 const Photo = styled.img`
@@ -55,13 +63,15 @@ const Photo = styled.img`
     border: 9px solid transparent;
     background: linear-gradient(#eee, #eee 0) padding-box,
     ${theme.gradients.primaryBorder} border-box;
+    @media ${theme.media.mobile}{
+        width: 300px;
+        height: 300px;
+    }
 `
 
 const TextContainer = styled.div`
-    color: ${theme.colors.tertiaryFont};
     letter-spacing: -0.02em;
-    font-weight: 700;
-    font-size: 58px;
+    ${font({weight: 700, color: theme.colors.tertiaryFont, Fmax: 58, Fmin: 36})}
 `
 
 const Text = styled.span`
@@ -70,17 +80,15 @@ const Text = styled.span`
 
 const MainTitle = styled.h3`
     letter-spacing: -0.02em;
-    font-weight: 700;
-    font-size: 58px;
+    ${font({weight: 700, Fmax: 58, Fmin: 36})}
 `
 
 const Name = styled.h2`
+    ${font({weight: 700, Fmax: 58, Fmin: 36})}
     background: ${theme.gradients.primaryFont};
     background-clip: text;
     color: transparent;
     letter-spacing: -0.02em;
-    font-weight: 700;
-    font-size: 58px;
 `
 
 
