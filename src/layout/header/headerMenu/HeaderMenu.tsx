@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import {theme} from "../../styles/Theme.ts";
+import {theme} from "../../../styles/Theme.ts";
+import {Social} from "../../../components/social/Social.tsx";
 
-export const Menu = (props: { menuItems: Array<string> }) => {
+export const HeaderMenu = (props: { menuItems: Array<string> }) => {
     return (
-        <StyledMenu>
-            <ul>
+        <StyledHeaderMenu>
+            <HeaderMenuList>
                 {props.menuItems.map((item) => (
                     <ListItem key={crypto.randomUUID()}>
                         <Link href="">
@@ -18,17 +19,35 @@ export const Menu = (props: { menuItems: Array<string> }) => {
                         </Link>
                     </ListItem>
                 ))}
-            </ul>
-        </StyledMenu>
+            </HeaderMenuList>
+            <Social/>
+        </StyledHeaderMenu>
     );
 };
 
-const StyledMenu = styled.nav`
-    ul {
-        display: flex;
-        gap: 40px;
-        list-style-type: none;
+const StyledHeaderMenu = styled.nav`
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+    @media ${theme.media.laptop} {
+        gap: 15px;
     }
+    @media ${theme.media.miniLaptop} {
+        display: none;
+    }
+
+`
+
+const HeaderMenuList = styled.ul`
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+
+    @media ${theme.media.laptop} {
+        gap: 15px;
+    }
+    
 `
 
 const Link = styled.a`

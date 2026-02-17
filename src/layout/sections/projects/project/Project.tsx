@@ -32,8 +32,10 @@ export const Project = (props: ProjectPropsType) => {
 const StyledProject = styled.div`
     background-color: ${theme.colors.cardBackground};
     max-width: 373px;
-    width: 100%;
+    width: 330px;
+    //width: 100%;
     border-radius: 20px;
+    flex-grow: 1;
 `
 
 const Image = styled.img`

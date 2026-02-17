@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo.tsx";
-import {Menu} from "../../components/menu/Menu.tsx";
-import {Social} from "../../components/social/Social.tsx";
+import {HeaderMenu} from "./headerMenu/HeaderMenu.tsx";
 import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 import {Container} from "../../components/Container.tsx";
+import {MobileMenu} from "./mobileMenu/MobileMenu.tsx";
 
 
 const menuTitles: Array<string> = ["Home", "About", "Tech Stack", "Tech Stack", "Projects", "Contact"]
@@ -15,10 +15,8 @@ export const Header = () => {
                 <FlexWrapper justify="space-between" alignItem="center" wrap="wrap">
                     <HeaderTitle>Frontend developer</HeaderTitle>
                     <Logo iconId="logoColor"/>
-                    <FlexWrapper gap="40px" alignItem="center">
-                        <Menu menuItems={menuTitles}/>
-                        <Social/>
-                    </FlexWrapper>
+                    <HeaderMenu menuItems={menuTitles}/>
+                    <MobileMenu menuItems={menuTitles}/>
                 </FlexWrapper>
             </Container>
         </StyledHeader>
@@ -38,4 +36,10 @@ const StyledHeader = styled.header`
 const HeaderTitle = styled.h1`
     display: none;
 `
+
+
+
+
+
+
 

@@ -11,5 +11,11 @@ export const theme = {
     gradients: {
         primaryFont: 'linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%)',
         primaryBorder: 'linear-gradient(0deg, #13b0f5 2.6%, #e70faa 100%)',
+    },
+    media: {
+        laptop: "screen and (max-width:1024px)",
+        miniLaptop: "screen and (max-width:835px)",
+        tablet: "screen and (max-width:768px)",
+        mobile: "screen and (max-width:576px)"
     }
 }

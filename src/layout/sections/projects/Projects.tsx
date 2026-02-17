@@ -47,5 +47,6 @@ export const Projects = () => {
 };
 
 const StyledProjects = styled.section`
+   
 `
 
