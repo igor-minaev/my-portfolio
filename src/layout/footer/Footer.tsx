@@ -24,6 +24,7 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
     background-color: ${theme.colors.background};
+    padding: 20px 0;
 `
 
 const ConnectionWrapper = styled.footer`

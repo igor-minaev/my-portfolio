@@ -30,6 +30,7 @@ const StyledMain = styled.section`
     min-height: 100vh;
     display: flex;
     overflow-x: clip;
+    margin: 0 auto;
 `
 const PhotoContainer = styled.div`
     position: relative;
