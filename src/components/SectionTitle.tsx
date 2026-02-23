@@ -25,9 +25,9 @@ const Title = styled.h2`
 `
 const Description = styled.p`
     ${font({weight: 400, color: theme.colors.secondaryFont, Fmax: 32, Fmin: 26})}
-    margin: 49px 0 140px;
+    margin: 49px 0 80px;
     @media ${theme.media.mobile}{
-        margin: 30px 0 80px;
+        margin: 30px 0 60px;
     }
 `
 

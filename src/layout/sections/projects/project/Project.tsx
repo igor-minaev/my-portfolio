@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {Icon} from "../../../../components/icon/Icon.tsx";
 import {theme} from "../../../../styles/Theme.ts";
+import {font} from "../../../../styles/Common.ts";
 
 type ProjectPropsType = {
     src: string
@@ -18,12 +19,14 @@ export const Project = (props: ProjectPropsType) => {
                 <ProjectTitle>{props.title}</ProjectTitle>
                 <ProjectDescription>{props.description}</ProjectDescription>
                 <ProjectTechnologies>Tech stack : <span>{props.technologies}</span></ProjectTechnologies>
-                <Link href="#">
-                    <Icon iconId="chain" width="20" height="20" viewBox="0 0 20 20"/> Live Preview
-                </Link>
-                <Link href="#">
-                    <Icon iconId="github3" width="20" height="20" viewBox="0 0 20 20"/> View Code
-                </Link>
+                <LinkContainer>
+                    <Link href="#">
+                        <Icon iconId="chain" width="20" height="20" viewBox="0 0 20 20"/> Live Preview
+                    </Link>
+                    <Link href="#">
+                        <Icon iconId="github3" width="20" height="20" viewBox="0 0 20 20"/> View Code
+                    </Link>
+                </LinkContainer>
             </Description>
         </StyledProject>
     );
@@ -31,9 +34,8 @@ export const Project = (props: ProjectPropsType) => {
 
 const StyledProject = styled.div`
     background-color: ${theme.colors.cardBackground};
-    max-width: 373px;
-    //width: 330px;
-    width: 100%;
+    //max-width: 373px;
+    width: 340px;
     border-radius: 20px;
     flex-grow: 1;
 `
@@ -52,13 +54,11 @@ const Description = styled.div`
 
 
 const ProjectTitle = styled.h4`
-    font-weight: 500;
-    font-size: 28px;
+    ${font({weight: 500, Fmax: 28, Fmin: 20})}
 `
 
 const ProjectDescription = styled.p`
-    font-weight: 300;
-    font-size: 18px;
+    ${font({weight: 300, Fmax: 18, Fmin: 16})}
     margin: 17px 0 12px;
 `
 
@@ -82,16 +82,19 @@ const Link = styled.a`
     text-decoration-skip-ink: none;
     color: ${theme.colors.linkFont};
 
-    & + & {
-        margin-left: 48px;
-    }
-
     &:hover {
         transform: scale(1.2);
         background: ${theme.gradients.primaryFont};
         background-clip: text;
         color: transparent;
+        text-decoration: none;
     }
+`
 
+const LinkContainer = styled.div`
+    max-width: 280px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
 `
 

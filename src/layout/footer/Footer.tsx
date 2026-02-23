@@ -3,6 +3,7 @@ import {Logo} from "../../components/logo/Logo.tsx";
 import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 import {Container} from "../../components/Container.tsx";
 import {theme} from "../../styles/Theme.ts";
+import {font} from "../../styles/Common.ts";
 
 
 export const Footer = () => {
@@ -28,9 +29,12 @@ const StyledFooter = styled.footer`
 const ConnectionWrapper = styled.footer`
     display: flex;
     gap: 50px;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+    flex-wrap: wrap;
+    ${font({family: "'DM Sans', sans-serif", weight: 400, Fmax: 18, Fmin: 14})}
+    @media ${theme.media.mobile}{
+    gap: 15px;
+    justify-content: flex-end;
+}
 `
 
 const PhoneNumber = styled.a`
