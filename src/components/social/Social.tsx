@@ -1,56 +1,23 @@
 import {Icon} from "../icon/Icon.tsx";
-import styled from "styled-components";
-import {theme} from "../../styles/Theme.ts";
+import type {SocialItem} from "../../layout/header/Header.tsx";
+import React from "react";
+import {S} from './Social_Styles.ts'
 
-type SocialItem = {
-    id: string
-    iconId: string
-    width: string
-    height: string
-    viewBox: string
-}
-const socialIcons: Array<SocialItem> = [
-    {id: crypto.randomUUID(), iconId: "github", width: "30", height: "30", viewBox: "0 0 30 30"},
-    {id: crypto.randomUUID(), iconId: "twitter", width: "30", height: "30", viewBox: "0 0 30 30"},
-    {id: crypto.randomUUID(), iconId: "linkedin", width: "30", height: "30", viewBox: "0 0 30 30"}
-]
 
-export const Social = () => {
+export const Social: React.FC<{ socialIcons: Array<SocialItem> }> = (props: { socialIcons: Array<SocialItem> }) => {
     return (
-        <StyledSocial>
-            {socialIcons.map((item) => (
-                <ListItem key={item.id}>
-                    <Link href="#">
+        <S.Social>
+            {props.socialIcons.map((item) => (
+                <S.ListItem key={item.id}>
+                    <S.Link href="#">
                         <Icon iconId={item.iconId} width={item.width} height={item.height} viewBox={item.viewBox}/>
-                    </Link>
-                </ListItem>
+                    </S.Link>
+                </S.ListItem>
             ))}
-        </StyledSocial>
+        </S.Social>
     );
 };
 
-const StyledSocial = styled.ul`
-    display: flex;
-    gap: 20px;
-    list-style-type: none;
 
-`
-const ListItem = styled.li`
-
-`
-const Link = styled.a`
-    display: flex;
-    align-items: center;
-    color: ${theme.colors.secondaryFont};
-
-    svg {
-
-    }
-
-    &:hover {
-        color: ${theme.colors.tertiaryFont};
-        transform: translateY(-4px);
-    }
-`
 
 
