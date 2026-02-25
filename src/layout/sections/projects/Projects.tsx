@@ -1,5 +1,5 @@
 import {SectionTitle} from "../../../components/SectionTitle.tsx";
-import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
+import {FlexWrapper} from "../../../components/FlexWrapper.ts";
 import {Project} from "./project/Project.tsx";
 import project1 from "../../../assets/images/proj-1.png"
 import project2 from "../../../assets/images/proj-2.png"
@@ -7,7 +7,7 @@ import project3 from "../../../assets/images/proj-3.png"
 import project4 from "../../../assets/images/proj-4.png"
 import project5 from "../../../assets/images/proj-5.png"
 import project6 from "../../../assets/images/proj-6.png"
-import {Container} from "../../../components/Container.tsx";
+import {Container} from "../../../components/Container.ts";
 import React from "react";
 import {S} from './Projects_Styles.ts'
 

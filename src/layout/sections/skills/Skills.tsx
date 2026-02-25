@@ -1,5 +1,5 @@
 import {SectionTitle} from "../../../components/SectionTitle.tsx";
-import {Container} from "../../../components/Container.tsx";
+import {Container} from "../../../components/Container.ts";
 import {Icon} from "../../../components/icon/Icon.tsx";
 import React from "react";
 import {S} from './Skills_Styles.ts'
