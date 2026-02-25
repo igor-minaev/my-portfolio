@@ -1,57 +1,24 @@
-import styled from "styled-components";
 import {Logo} from "../../components/logo/Logo.tsx";
 import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 import {Container} from "../../components/Container.tsx";
-import {theme} from "../../styles/Theme.ts";
-import {font} from "../../styles/Common.ts";
+import React from "react";
+import {S} from './Footer_Styles.ts'
 
-
-export const Footer = () => {
+export const Footer:React.FC = () => {
     return (
-        <StyledFooter>
+        <S.Footer>
             <Container>
                 <FlexWrapper justify="space-between" alignItem="center">
                     <Logo iconId="logo"/>
-                    <ConnectionWrapper>
-                        <PhoneNumber href="tel:+3445762358252"> +3445762358252</PhoneNumber>
-                        <Email href="mailto:someemail@gmail.com">someemail@gmail.com</Email>
-                    </ConnectionWrapper>
+                    <S.ConnectionWrapper>
+                        <S.PhoneNumber href="tel:+3445762358252"> +3445762358252</S.PhoneNumber>
+                        <S.Email href="mailto:someemail@gmail.com">someemail@gmail.com</S.Email>
+                    </S.ConnectionWrapper>
                 </FlexWrapper>
             </Container>
-        </StyledFooter>
+        </S.Footer>
     );
 };
 
-const StyledFooter = styled.footer`
-    background-color: ${theme.colors.background};
-    padding: 20px 0;
-`
 
-const ConnectionWrapper = styled.footer`
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-    ${font({family: "'DM Sans', sans-serif", weight: 400, Fmax: 18, Fmin: 14})}
-    @media ${theme.media.mobile}{
-    gap: 15px;
-    justify-content: flex-end;
-}
-`
-
-const PhoneNumber = styled.a`
-    color: ${theme.colors.secondaryFont};
-    &:hover{
-        background: ${theme.gradients.primaryFont};
-        background-clip: text;
-        color: transparent;
-    }
-`
-const Email = styled.a`
-    color: ${theme.colors.secondaryFont};
-    &:hover{
-        background: ${theme.gradients.primaryFont};
-        background-clip: text;
-        color: transparent;
-    }
-`
 
