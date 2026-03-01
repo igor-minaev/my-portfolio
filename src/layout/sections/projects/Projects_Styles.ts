@@ -52,6 +52,7 @@ const Link = styled.a`
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: ${theme.colors.linkFont};
+    transition: ${theme.animations.transition};
 
     &:hover {
         transform: scale(1.2);

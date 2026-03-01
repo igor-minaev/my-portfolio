@@ -20,7 +20,9 @@ const ConnectionWrapper = styled.footer`
 
 const PhoneNumber = styled.a`
     color: ${theme.colors.secondaryFont};
-    &:hover{
+    transition: ${theme.animations.transition};
+
+    &:hover {
         background: ${theme.gradients.primaryFont};
         background-clip: text;
         color: transparent;
@@ -28,7 +30,9 @@ const PhoneNumber = styled.a`
 `
 const Email = styled.a`
     color: ${theme.colors.secondaryFont};
-    &:hover{
+    transition: ${theme.animations.transition};
+
+    &:hover {
         background: ${theme.gradients.primaryFont};
         background-clip: text;
         color: transparent;

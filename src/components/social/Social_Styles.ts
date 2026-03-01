@@ -14,6 +14,7 @@ const Link = styled.a`
     display: flex;
     align-items: center;
     color: ${theme.colors.secondaryFont};
+    transition: ${theme.animations.transition};
 
     svg {
 
