@@ -38,7 +38,7 @@ export const Header: React.FC = () => {
             <Container>
                 <FlexWrapper justify="space-between" alignItem="center">
                     <S.HeaderTitle>Frontend developer</S.HeaderTitle>
-                    <Logo iconId="logoColor" href={"home"}/>
+                    <Logo iconId="logoColor"/>
                     {width < breakpoint ? <MobileMenu socialIcons={socialIcons}/> :
                         <DesktopMenu socialIcons={socialIcons}/>}
                 </FlexWrapper>

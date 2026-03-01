@@ -3,6 +3,7 @@ import {Container} from "../../../components/Container.ts";
 import {Icon} from "../../../components/icon/Icon.tsx";
 import React from "react";
 import {S} from './Skills_Styles.ts'
+import {Fade} from "react-awesome-reveal";
 
 
 type SkillType = {
@@ -57,9 +58,12 @@ export const Skills: React.FC = () => {
             <Container>
                 <SectionTitle title="My Tech Stack" description="Technologies I’ve been working with recently"/>
                 <S.GridWrapper>
-                    {skillsItems.map(s => (
-                        <Icon key={s.id} iconId={s.iconId} height={s.height} width={s.width} viewBox={s.viewBox}/>
-                    ))}
+                    <Fade cascade={true} damping={0.3}>
+                        {skillsItems.map(s => (
+
+                            <Icon key={s.id} iconId={s.iconId} height={s.height} width={s.width} viewBox={s.viewBox}/>
+                        ))}
+                    </Fade>
                 </S.GridWrapper>
             </Container>
         </S.Skills>

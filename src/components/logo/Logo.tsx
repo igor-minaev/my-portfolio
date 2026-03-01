@@ -4,7 +4,7 @@ import React from "react";
 import {animateScroll as scroll} from "react-scroll";
 
 
-export const Logo: React.FC<{ iconId: string, href: string }> = (props: { iconId: string, href: string }) => {
+export const Logo: React.FC<{ iconId: string }> = (props: { iconId: string }) => {
     return (
         <Link onClick={() => {
             scroll.scrollToTop()
