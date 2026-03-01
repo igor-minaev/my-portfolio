@@ -1,12 +1,15 @@
 import React from 'react';
 import {S} from './../HeaderMenu_Styles.ts'
 
-export const Menu: React.FC<{ menuItems: Array<string> }> = (props: { menuItems: Array<string> }) => {
+const menuItems = ["Home", "Tech Stack", "Projects", "Contacts"]
+
+export const Menu: React.FC = () => {
+
     return (
         <S.MenuList>
-            {props.menuItems.map((item) => (
+            {menuItems.map((item) => (
                 <S.ListItem key={crypto.randomUUID()}>
-                    <S.Link href="">
+                    <S.NavLink activeClass="active"  to={`${item.toLowerCase()}`} smooth={true} spy={true}>
                         {item}
                         <S.Mask>
                             <span>{item}</span>
@@ -14,7 +17,7 @@ export const Menu: React.FC<{ menuItems: Array<string> }> = (props: { menuItems:
                         <S.Mask>
                             <span>{item}</span>
                         </S.Mask>
-                    </S.Link>
+                    </S.NavLink>
                 </S.ListItem>
             ))}
         </S.MenuList>

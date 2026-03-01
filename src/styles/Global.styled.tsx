@@ -19,11 +19,12 @@ export const GlobalStyle = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
         color: ${theme.colors.primaryFont};
         line-height: 1.2;
-       min-width: 360px;
+        min-width: 360px;
     }
 
     a {
         text-decoration: none;
+        cursor: pointer;
     }
 
     ul {

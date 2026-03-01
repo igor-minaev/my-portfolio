@@ -14,7 +14,7 @@ export type SocialItem = {
     viewBox: string
 }
 
-const menuTitles: Array<string> = ["Home", "About", "Tech Stack", "Tech Stack", "Projects", "Contact"]
+
 const socialIcons: Array<SocialItem> = [
     {id: crypto.randomUUID(), iconId: "github", width: "30", height: "30", viewBox: "0 0 30 30"},
     {id: crypto.randomUUID(), iconId: "twitter", width: "30", height: "30", viewBox: "0 0 30 30"},
@@ -38,9 +38,9 @@ export const Header: React.FC = () => {
             <Container>
                 <FlexWrapper justify="space-between" alignItem="center">
                     <S.HeaderTitle>Frontend developer</S.HeaderTitle>
-                    <Logo iconId="logoColor"/>
-                    {width < breakpoint ? <MobileMenu menuItems={menuTitles} socialIcons={socialIcons}/> :
-                        <DesktopMenu menuItems={menuTitles} socialIcons={socialIcons}/>}
+                    <Logo iconId="logoColor" href={"home"}/>
+                    {width < breakpoint ? <MobileMenu socialIcons={socialIcons}/> :
+                        <DesktopMenu socialIcons={socialIcons}/>}
                 </FlexWrapper>
             </Container>
         </S.Header>

@@ -5,8 +5,7 @@ import React, {useState} from "react";
 import {S} from './../HeaderMenu_Styles.ts'
 
 
-export const MobileMenu: React.FC<{ menuItems: Array<string>, socialIcons: Array<SocialItem> }> = (props: {
-    menuItems: Array<string>,
+export const MobileMenu: React.FC<{socialIcons: Array<SocialItem> }> = (props: {
     socialIcons: Array<SocialItem>
 }) => {
     const [menuIsOpen, setMenuIsOpen] = useState(false)
@@ -17,7 +16,7 @@ export const MobileMenu: React.FC<{ menuItems: Array<string>, socialIcons: Array
                 <span></span>
             </S.BurgerButton>
             <S.MobileMenuPopup isOpen={menuIsOpen} onClick={() => setMenuIsOpen(!menuIsOpen)}>
-                <Menu menuItems={props.menuItems}/>
+                <Menu/>
                 <Social socialIcons={props.socialIcons}/>
             </S.MobileMenuPopup>
         </S.MobileMenu>

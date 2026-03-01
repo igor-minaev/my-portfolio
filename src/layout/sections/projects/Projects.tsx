@@ -1,12 +1,12 @@
 import {SectionTitle} from "../../../components/SectionTitle.tsx";
 import {FlexWrapper} from "../../../components/FlexWrapper.ts";
 import {Project} from "./project/Project.tsx";
-import project1 from "../../../assets/images/proj-1.png"
-import project2 from "../../../assets/images/proj-2.png"
-import project3 from "../../../assets/images/proj-3.png"
-import project4 from "../../../assets/images/proj-4.png"
-import project5 from "../../../assets/images/proj-5.png"
-import project6 from "../../../assets/images/proj-6.png"
+import project1 from "../../../assets/images/proj-1.webp"
+import project2 from "../../../assets/images/proj-2.webp"
+import project3 from "../../../assets/images/proj-3.webp"
+import project4 from "../../../assets/images/proj-4.webp"
+import project5 from "../../../assets/images/proj-5.webp"
+import project6 from "../../../assets/images/proj-6.webp"
 import {Container} from "../../../components/Container.ts";
 import React from "react";
 import {S} from './Projects_Styles.ts'
@@ -59,7 +59,7 @@ const projectItems = [
 
 export const Projects: React.FC = () => {
     return (
-        <S.Projects>
+        <S.Projects id="projects">
             <Container>
                 <SectionTitle title="Projects" description="Things I’ve built so far"/>
                 <FlexWrapper justify="space-around" wrap="wrap" gap="65px 15px">

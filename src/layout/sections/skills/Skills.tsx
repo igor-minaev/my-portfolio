@@ -53,7 +53,7 @@ const skillsItems: Array<SkillType> = [
 
 export const Skills: React.FC = () => {
     return (
-        <S.Skills>
+        <S.Skills id="tech stack">
             <Container>
                 <SectionTitle title="My Tech Stack" description="Technologies I’ve been working with recently"/>
                 <S.GridWrapper>

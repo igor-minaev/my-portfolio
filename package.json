@@ -10,10 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/react-scroll": "^1.8.10",
     "babel-plugin-styled-components": "^2.1.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "styled-components": "^6.3.8"
+    "react-scroll": "^1.9.3",
+    "styled-components": "^6.3.8",
+    "typewriter-effect": "^2.22.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
